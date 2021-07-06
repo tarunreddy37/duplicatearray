@@ -1,0 +1,29 @@
+import java.util.*;
+class duplicatearray
+{
+public static void main(String args[])
+{
+	int size,i;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter array size:");
+	size=sc.nextInt();
+	int ar[];
+	ar=new int[size];
+	System.out.println("enter array elements:");
+	for(i=0;i<size;i++)
+	{
+	ar[i]=sc.nextInt();
+	}
+	for(int j=0;j<size;j++)
+	{
+	for(int k=j+1;k<size;k++)
+	{
+	if(ar[j]==ar[k])
+	{
+	System.out.print(ar[k]);
+	System.out.print(" ");
+	}
+	}
+	}
+}
+}
